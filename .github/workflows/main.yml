@@ -1,0 +1,16 @@
+name: Delay Example
+
+on: [push]
+
+jobs:
+  delay-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo "Start job"
+
+      - name: Delay 10 seconds
+        run: sleep 10
+
+      - name: Step 2
+        run: echo "Continue after delay"
